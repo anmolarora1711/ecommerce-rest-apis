@@ -1,0 +1,22 @@
+{
+  "name": "rest-apis",
+  "version": "1.0.0",
+  "description": "Creating rest apis for an ecommerce website",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon -r esm server.js",
+    "start": "node -r esm server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anmol Arora",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.1"
+  }
+}
