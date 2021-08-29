@@ -1,6 +1,6 @@
 APIs for an ecommerce website:
 
-[] Register a user
+[+] Register a user
 [] Login a user
 [] Who am I
 [] Add new product

@@ -11,7 +11,7 @@ const registerController = {
 		// [+] Authorize the request
 		// [+] Check if user is in the database already
 		// [+] Prepare model
-		// [+] Storet the database
+		// [+] Store the database
 		// [+] Generate JWT token
 		// [+] Send response
 
