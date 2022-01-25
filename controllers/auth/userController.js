@@ -12,7 +12,7 @@ const userController = {
 			}
 			res.json(user);
 		} catch (error) {
-			return next(err);
+			return next(error);
 		}
 	},
 };
