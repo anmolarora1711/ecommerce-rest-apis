@@ -5,7 +5,7 @@ APIs for an ecommerce website:
 [+] Who am I
 [+] Refresh the token
 [+] Logout the user
-[] Add new product
+[+] Add new product
 [] Update a product
 [] Get all products
 [] Get single product
