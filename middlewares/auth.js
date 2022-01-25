@@ -19,7 +19,7 @@ const auth = async (req, res, next) => {
 		req.user = user;
 		next();
 	} catch (error) {
-		return next(CustomErrorHandler());
+		return next(CustomErrorHandler.unAuthorized());
 	}
 };
 

@@ -3,8 +3,8 @@ APIs for an ecommerce website:
 [+] Register a user
 [+] Login a user
 [+] Who am I
-[] Refresh the token
-[] Logout the user
+[+] Refresh the token
+[+] Logout the user
 [] Add new product
 [] Update a product
 [] Get all products

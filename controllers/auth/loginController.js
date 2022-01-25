@@ -53,6 +53,27 @@ const loginController = {
 			return next(error);
 		}
 	},
+	async  logout(req, res, next) {
+		// Validation
+		const refreshSchema = Joi.object({
+			refresh_token: Joi.string().required(),
+		});
+
+		const { error } = refreshSchema.validate(req.body);
+
+		if (error) {
+			return next(error);
+		}
+		
+		try {
+			await RefreshToken.deleteOne({ token: req.body.refresh_token });
+
+		} catch (error) {
+			return next(error);
+		}
+
+		res.json({ status: 1, message: 'Logout successfully' });
+	}
 };
 
 export default loginController;
