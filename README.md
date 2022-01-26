@@ -1,26 +1,48 @@
-# ecommerce-rest-apis
+# Ecommerce Rest APIs
 
 Rest APIs for an ecommerce website using Node.js, Express.js and MongoDB
 
-## Installation 
+## Requirements
 
-### Download project
+- Install [Node.js](https://nodejs.org/en/)
+- Install [MongoDB](https://docs.mongodb.com/manual/installation/)
 
-Run following command:
-`git clone `
+## Technologies Used
+1.  NodeJS
+2.  Express
+3.  Multer
+4.  MongoDB
+5.  Mongoose
+6.  JWT
 
-### Install Dependancies
-After cloning/downloading the source code, change directory to project folder ( project root folder ). 
+## Getting Started
 
-Run following commands:
-`rm -rf package-lock.json`
-`npm install`
-(This command will install all the required dependancies.)
+- Clone the repository
+```
+git clone 
+```
 
-### Setup Environment
-Create a new file called `.env`. 
-Copy all the content from `.env.example` and paste it into `.env`
-Change DB_URL to yours db url. 
+- Into the project directory
+```
+cd ecommerce-rest-apis
+```
 
-### Run the server
-`npm run dev`
+- Install dependencies
+```
+npm install
+```
+
+- Create a new file named '.env' and place that file in root folder
+- Copy all the content from `.env.example` and paste it into `.env`
+- Change DB_URL to yours database url.
+
+- Build and run the project
+```
+npm run dev
+```
+
+- Navigate to `http://localhost:5000/`
+
+---
+<samp>***Enjoy Learning!!!***</samp>
+---
