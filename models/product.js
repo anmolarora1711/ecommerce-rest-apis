@@ -26,7 +26,7 @@ const productSchema = new Schema(
         },
 	},
 	{
-		timestamps: true, toJSON: { getters: true }
+		timestamps: true, toJSON: { getters: true }, id: false
 	},
 );
 

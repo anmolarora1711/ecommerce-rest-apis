@@ -24,8 +24,6 @@ const productController = {
                 return next(CustomErrorHandler.serverError(err.message));
             }
             const filePath = req.file.path;
-            
-            console.log(filePath);
 
             // Validation
             const { error } = productSchema.validate(req.body);
@@ -117,8 +115,8 @@ const productController = {
                 if (err) {
                     return next(CustomErrorHandler.serverError());
                 }
+                return res.json(document);
             });
-            res.json(document);
         } catch (error) {
             return next(error);
         }
@@ -127,6 +125,14 @@ const productController = {
         try {
             const documents = await Product.find().select('-updatedAt -__v').sort({ createdAt: -1 });
             return res.json(documents);
+        } catch (error) {
+            return next(error);
+        }
+    },
+    async show(req, res, next) {
+        try {
+            const document = await Product.findOne({ _id: req.params.id }).select('-updatedAt -__v');
+            return res.json(document);
         } catch (error) {
             return next(error);
         }
