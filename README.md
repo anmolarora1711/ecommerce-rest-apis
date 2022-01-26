@@ -6,6 +6,7 @@ Rest APIs for an ecommerce website using Node.js, Express.js and MongoDB
 
 - Install [Node.js](https://nodejs.org/en/)
 - Install [MongoDB](https://docs.mongodb.com/manual/installation/)
+- Install [Postman](https://www.postman.com/downloads/) or use any other api testing tool
 
 ## Technologies Used
 1.  NodeJS
