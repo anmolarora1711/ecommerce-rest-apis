@@ -19,5 +19,6 @@ router.post("/refresh", refreshController.refresh);
 
 router.post("/products", [auth, admin], productController.store);
 router.put("/products/:id", [auth, admin],  productController.update);
+router.delete("/products/:id", [auth, admin],  productController.destroy);
 
 export default router;
