@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { APP_URL } from '../config'
 
 const Schema = mongoose.Schema;
 
@@ -19,10 +20,13 @@ const productSchema = new Schema(
         image: {
             type: String,
             required: true,
+            get: (image) => {
+                return `${APP_URL}/${image}`.replace('\\', '/');
+            }
         },
 	},
 	{
-		timestamps: true,
+		timestamps: true, toJSON: { getters: true }
 	},
 );
 

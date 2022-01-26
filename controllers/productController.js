@@ -25,6 +25,8 @@ const productController = {
             }
             const filePath = req.file.path;
             
+            console.log(filePath);
+
             // Validation
             const { error } = productSchema.validate(req.body);
     
@@ -117,6 +119,14 @@ const productController = {
                 }
             });
             res.json(document);
+        } catch (error) {
+            return next(error);
+        }
+    },
+    async list(req, res, next) {
+        try {
+            const documents = await Product.find().select('-updatedAt -__v').sort({ createdAt: -1 });
+            return res.json(documents);
         } catch (error) {
             return next(error);
         }

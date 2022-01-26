@@ -7,6 +7,6 @@ APIs for an ecommerce website:
 [+] Logout the user
 [+] Add new product
 [+] Update a product
-[] Get all products
+[+] Get all products
 [] Get single product
 [+] Delete a product
